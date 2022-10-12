@@ -24,5 +24,5 @@ modules:
       - cp -r . /app
       - install -D ./tools/runner.sh /app/bin/runner.sh
       - install -Dm644 ./flatpak/com.steamdeckrepo.manager.appdata.xml /app/share/metainfo/com.steamdeckrepo.manager.appdata.xml
-      - install -Dm644 ./flatpak/repomanager.svg -t /app/share/icons/hicolor/128x128/apps
+      - install -Dm644 ./flatpak/repomanager.png -t /app/share/icons/hicolor/128x128/apps
       - install -Dm755 ./flatpak/repomanager.desktop -t ${FLATPAK_DEST}/share/applications/
