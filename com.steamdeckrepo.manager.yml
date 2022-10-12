@@ -2,7 +2,7 @@ id: com.steamdeckrepo.manager
 sdk: org.gnome.Sdk
 runtime: org.gnome.Platform
 runtime-version: "43"
-rename-icon: icon
+rename-icon: repomanager
 rename-desktop-file: repomanager.desktop
 command: runner.sh
 finish-args:
