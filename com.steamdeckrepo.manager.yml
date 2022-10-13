@@ -18,7 +18,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/CapitaineJSparrow/steam-repo-manager
-        commit: 8b6bab41bc6755ce7b6f831ee12f421c150b5639
+        commit: f8161a98879130720e3bbb39701ab3e0c826e1cb
     buildsystem: simple
     build-commands:
       - cp -r . /app
