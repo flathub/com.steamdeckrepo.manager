@@ -1,15 +1,12 @@
 id: com.steamdeckrepo.manager
 sdk: org.gnome.Sdk
-runtime: org.gnome.Platform
-runtime-version: "43"
+runtime: org.freedesktop.Platform
+runtime-version: "21.08"
 rename-icon: repomanager
 rename-desktop-file: repomanager.desktop
 command: runner.sh
-add-extensions:
-  org.gtk.Gtk3theme.Yaru-dark:
-    version: '3.22'
-    autodownload: true
-    autodelete: false
+sdk-extensions:
+  - org.gtk.Gtk3theme.Yaru-dark
 finish-args:
   - --socket=fallback-x11
   - --socket=wayland
