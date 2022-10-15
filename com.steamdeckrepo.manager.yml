@@ -1,7 +1,7 @@
 id: com.steamdeckrepo.manager
 sdk: org.gnome.Sdk
-runtime: org.freedesktop.Platform
-runtime-version: "21.08"
+runtime: org.gnome.Platform
+runtime-version: "43"
 rename-icon: repomanager
 rename-desktop-file: repomanager.desktop
 command: runner.sh
@@ -24,6 +24,7 @@ modules:
     buildsystem: simple
     build-commands:
       - cp -r . /app
+      - cp -r ./themes /app/share/
       - install -D ./flatpak/runner.sh /app/bin/runner.sh
       - install -Dm644 ./flatpak/com.steamdeckrepo.manager.appdata.xml /app/share/metainfo/com.steamdeckrepo.manager.appdata.xml
       - install -Dm644 ./flatpak/repomanager.svg -t /app/share/icons/hicolor/scalable/apps
