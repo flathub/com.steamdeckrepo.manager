@@ -5,6 +5,11 @@ runtime-version: "43"
 rename-icon: repomanager
 rename-desktop-file: repomanager.desktop
 command: runner.sh
+add-extensions:
+  org.gtk.Gtk3theme.Arc-Dark:
+    version: '3.22'
+    autodownload: true
+    autodelete: false
 finish-args:
   - --socket=fallback-x11
   - --socket=wayland
