@@ -5,7 +5,7 @@ runtime-version: "43"
 rename-icon: repomanager
 rename-desktop-file: repomanager.desktop
 command: runner.sh
-sdk-extensions:
+add-extensions:
   - org.gtk.Gtk3theme.Yaru-dark
 finish-args:
   - --socket=fallback-x11
@@ -20,11 +20,10 @@ modules:
     sources:
       - type: git
         url: https://github.com/CapitaineJSparrow/steam-repo-manager
-        commit: 76c7fe0e1817d65a77f7c7dd70c2b2f54bebe648
+        commit: 256f1012ee0b435c342bf5f9f6556a9e93474377
     buildsystem: simple
     build-commands:
       - cp -r . /app
-      - cp -r ./themes /app/share/
       - install -D ./flatpak/runner.sh /app/bin/runner.sh
       - install -Dm644 ./flatpak/com.steamdeckrepo.manager.appdata.xml /app/share/metainfo/com.steamdeckrepo.manager.appdata.xml
       - install -Dm644 ./flatpak/repomanager.svg -t /app/share/icons/hicolor/scalable/apps
