@@ -6,7 +6,7 @@ rename-icon: repomanager
 rename-desktop-file: repomanager.desktop
 command: runner.sh
 add-extensions:
-  org.gtk.Gtk3theme.Arc-Dark:
+  org.gtk.Gtk3theme.Yaru-dark:
     version: '3.22'
     autodownload: true
     autodelete: false
@@ -23,7 +23,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/CapitaineJSparrow/steam-repo-manager
-        commit: 18c3414c562e70088c90593ff00cfc68c5130d52
+        commit: 22c6e45c17616c4b22df3998f000645d19caf34d
     buildsystem: simple
     build-commands:
       - cp -r . /app
