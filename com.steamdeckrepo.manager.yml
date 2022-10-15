@@ -16,7 +16,7 @@ finish-args:
   - --socket=pulseaudio
   - --share=network
   - --filesystem=home # Seems to fix issues when enabling this flag with flatseal
-  - --filesystem=~/.steam:rw # Steam (Non-flatpak)
+  - --filesystem=~/.steam:rw
 modules:
   - python3-requirements.json
   - name: runner
